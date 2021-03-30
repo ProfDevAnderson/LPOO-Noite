@@ -1,14 +1,14 @@
-package aula4;
+package aula5;
 
 public class Conta {
 
     private String nome;
-    private int conta;
+    private int numero;
     private double saldo;
 
-    public Conta(String nome, int conta, double saldo) {
+    public Conta(String nome, int numero, double saldo) {
         this.nome = nome;
-        this.conta = conta;
+        this.numero = numero;
         this.saldo = saldo;
     }
 
@@ -23,12 +23,12 @@ public class Conta {
         this.nome = nome;
     }
 
-    public int getConta() {
-        return conta;
+    public int getNumero() {
+        return numero;
     }
 
-    public void setConta(int conta) {
-        this.conta = conta;
+    public void setNumero(int numero) {
+        this.numero = numero;
     }
 
     public double getSaldo() {
@@ -39,5 +39,10 @@ public class Conta {
         this.saldo = saldo;
     }
 
-   
+
+    public String mostrarInfo() {
+        return "Conta{" + "nome=" + nome + ", numero=" + numero + ", saldo=" + saldo + '}';
+    }
+
+
 }
