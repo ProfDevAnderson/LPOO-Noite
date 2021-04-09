@@ -12,6 +12,17 @@ public class Conta {
         this.saldo = saldo;
     }
 
+    public Conta(String nome) {
+        this.nome = nome;
+    }
+
+    public Conta(String nome, int numero) {
+        this.nome = nome;
+        this.numero = numero;
+    }
+    
+    
+
     public Conta() {
     }
 
